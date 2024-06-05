@@ -1,4 +1,4 @@
-FROM manticoresearch/manticore:dev as manticore
+FROM manticoresearch/manticore:6.3.0 as manticore
 
 RUN cd ~ && wget https://repo.manticoresearch.com/manticore-repo.noarch.deb \
  && dpkg -i manticore-repo.noarch.deb \
